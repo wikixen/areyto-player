@@ -5,5 +5,16 @@ export const Route = createFileRoute('/library')({
 })
 
 function RouteComponent() {
-  return <div>Hello "/library"!</div>
+  return (
+    <div class=''>
+      <select class='bg-black p-1 rounded-sm outline-none'>
+        <optgroup label='Filter By'>
+          <option>Artists</option>
+          <option>Albums</option>
+          <option>Songs</option>
+          <option>Playlists</option>
+        </optgroup>
+      </select>
+    </div>
+  )
 }
